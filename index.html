@@ -1,283 +1,153 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>集团公司2025年年中领导干部会议</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
-        body {
-            font-family: 'Noto Sans SC', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .header-bg {
-            background: linear-gradient(135deg, #2c3e50 0%, #4a6580 100%);
-        }
-        .blue-accent {
-            color: #2563eb;
-        }
-        .blue-bg {
-            background-color: #2563eb;
-        }
-        .blue-light-bg {
-            background-color: #dbeafe;
-        }
-        .blue-border {
-            border-color: #2563eb;
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -2px rgba(37, 99, 235, 0.05);
-        }
-        .nav-link {
-            position: relative;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #2563eb;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 2rem;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 50%;
-            height: 3px;
-            background-color: #2563eb;
-        }
-        .quote-mark {
-            font-size: 5rem;
-            color: #2563eb;
-            opacity: 0.2;
-            position: absolute;
-            top: -20px;
-            left: -10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>集团公司召开2025年年中领导干部会议</title>
+  <meta name="description" content="集团公司2025年年中领导干部会议——讲话与工作报告全文，手机/电脑端自适应，排版清晰优雅。" />
+  <style>
+    :root{
+      --bg:#f4f8fd;              /* 浅蓝白背景 */
+      --card:#ffffff;            /* 白色卡片 */
+      --text:#1a237e;            /* 深蓝文本 */
+      --muted:#5c6bc0;           /* 浅蓝灰副文本 */
+      --brand:#1976d2;           /* 主蓝色 */
+      --brand-weak:#e3f0ff;      /* 浅蓝色点缀 */
+      --shadow:0 10px 30px rgba(25, 118, 210, .08);
+      --radius:16px;
+      --max: 980px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#101c2c;
+        --card:#172a45;
+        --text:#e3eafc;
+        --muted:#90a4d4;
+        --brand:#64b5f6;
+        --brand-weak:#183a5a;
+        --shadow:0 10px 30px rgba(25, 118, 210, .25);
+      }
+      img{opacity:.96}
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; line-height:1.8}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    header.hero{
+      position:relative;overflow:hidden;border-radius:calc(var(--radius) + 6px);
+      padding:40px 24px;background:linear-gradient(135deg,var(--brand) 0%, #64b5f6 100%);
+      color:#fff;box-shadow:var(--shadow);margin:24px auto;
+    }
+    .hero h1{margin:0 0 6px;font-weight:800;letter-spacing:.4px;font-size:clamp(22px,4vw,36px)}
+    .hero p{margin:0;opacity:.95;font-size:clamp(14px,2.6vw,16px)}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:13px;opacity:.95}
+    .card{
+      background:var(--card);box-shadow:var(--shadow);border-radius:var(--radius);
+      padding:22px 20px;margin:18px 0;
+    }
+    h2{font-size:clamp(18px,3vw,22px);margin:0 0 8px;color:var(--brand);}
+    h3{font-size:clamp(16px,2.5vw,19px);margin:18px 0 6px;color:var(--text);}
+    p{margin:10px 0}
+    .lead{font-size:clamp(15px,2.6vw,17px);color:var(--muted)}
+    .toc{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{background:var(--brand-weak);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;text-decoration:none}
+    .highlight{border-left:4px solid var(--brand);padding:10px 14px;background:rgba(25,118,210,.06);border-radius:10px}
+    footer{color:var(--muted);font-size:13px;text-align:center;margin:28px 0 16px}
+    .top{
+      position:fixed;right:18px;bottom:18px;border:none;background:var(--brand);
+      color:#fff;border-radius:999px;width:44px;height:44px;cursor:pointer;
+      box-shadow:var(--shadow);font-size:18px
+    }
+    .top:active{transform:translateY(1px)}
+    .small{font-size:13px;color:var(--muted)}
+    /* 蓝色链接 */
+    a { color: var(--brand); }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="header-bg text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold">集团公司门户</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="nav-link">首页</a>
-                    <a href="#" class="nav-link">新闻中心</a>
-                    <a href="#" class="nav-link">会议专题</a>
-                    <a href="#" class="nav-link">关于我们</a>
-                    <a href="#" class="nav-link">联系我们</a>
-                </div>
-                <div class="md:hidden">
-                    <button class="outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+  <div class="wrap">
+    <header class="hero">
+      <h1>集团公司召开2025年年中领导干部会议</h1>
+      <p class="lead">聚焦学习贯彻习近平总书记对铁路工作的重要指示批示精神，落实国铁集团党组部署，总结半年工作，动员全集团稳中求进、再接再厉、笃定实干。</p>
+      <div class="meta">
+        <span>时间：2025年7月30日</span>
+        <span>来源：办公室</span>
+      </div>
+    </header>
 
-    <!-- 标题区域 -->
-    <section class="header-bg text-white py-16">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-lg mb-2">2025年7月30日</p>
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">集团公司召开2025年年中领导干部会议</h1>
-            <p class="text-xl max-w-3xl mx-auto">聚焦学习贯彻习近平总书记对铁路工作的重要指示批示精神，落实国铁集团党组的部署要求</p>
-        </div>
+    <section class="card">
+      <h2>会议概况</h2>
+      <p>7月30日，集团公司召开2025年年中领导干部会议，围绕推动“十四五”圆满收官、“十五五”高标起步，动员全集团以挑大梁、打头阵的决心勇气，奋力在建设世界一流铁路企业中争当先行示范。集团公司党委书记、董事长蒋辉作讲话，总经理鲍立群受党委委托作工作报告。</p>
+      <div class="toc">
+        <a class="chip" href="#jiang">蒋辉书记讲话</a>
+        <a class="chip" href="#bao">鲍立群总经理报告</a>
+      </div>
     </section>
 
-    <!-- 主要内容 -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <p class="text-gray-600 mb-8">7月30日，集团公司召开2025年年中领导干部会议，聚焦学习贯彻习近平总书记对铁路工作的重要指示批示精神，落实国铁集团党组的部署要求，对半年工作进行总结，围绕推动"十四五"圆满收官、"十五五"高标起步，动员全集团坚持稳中求进，再接再厉、笃定实干，以挑大梁、打头阵的决心勇气，奋力在建设世界一流铁路企业中争当先行示范。</p>
-                
-                <div class="flex flex-col md:flex-row gap-8 mb-12">
-                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 blue-border">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">会议出席</h3>
-                        <p class="text-gray-700">集团公司党委书记、董事长蒋辉作讲话，总经理鲍立群受党委委托作工作报告。集团领导班子成员及有关领导出席会议，机关各部门负责人、各基层单位主要负责人等参加会议。</p>
-                    </div>
-                </div>
+    <section id="jiang" class="card">
+      <h2>蒋辉书记、董事长讲话：在发展中挑大梁 在改革中打头阵</h2>
+      <p class="small">围绕“在建设世界一流铁路企业中争当先行示范”提出四点意见。</p>
 
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 blue-accent">蒋辉书记、董事长讲话要点</h2>
-                
-                <div class="mb-12 relative">
-                    <div class="quote-mark">"</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 relative z-10">在发展中挑大梁 在改革中打头阵 奋力在建设世界一流铁路企业中争当先行示范</h3>
-                </div>
+      <h3>一、从向上向好发展态势中，坚定争当先行示范的信心</h3>
+      <div class="highlight">
+        <p>我们锚定在服务建设世界一流铁路企业中走在前列的目标，以开展学习教育为动力，集中精力确保安全、完成任务、提升管理，整体工作稳中向好。</p>
+      </div>
+      <p>今年以来，我们向“党”看齐、向“稳”扎根、向“大”发展、向“新”而行、向“精”求效、向“难”攻坚、向“融”深化，形成政治方向更加笃定、安全防线更加坚实、运输规模持续增长、改革创新红利释放、经营质量稳步提升、铁路建设取得突破、党建实效持续增强的良好态势。由此进一步明确：必须站稳政治立场、奋勇争先、坚持系统观念、守正创新，推动党建与业务深度融合赋能。</p>
 
-                <div class="space-y-12">
-                    <!-- 第一点 -->
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 blue-accent">一、从向上向好发展态势中，坚定争当先行示范的信心</h3>
-                        <p class="text-gray-600 mb-4">我们锚定在服务建设世界一流铁路企业中走在前列的目标，以开展学习教育为动力，集中精力确保安全、完成任务、提升管理，整体工作稳中向好。</p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-semibold text-gray-700 mb-2">今年以来取得的成就：</h4>
-                            <ul class="list-disc pl-5 text-gray-600">
-                                <li class="mb-2">向"党"看齐，政治方向更加笃定</li>
-                                <li class="mb-2">向"稳"扎根，安全防线更为坚实</li>
-                                <li class="mb-2">向"大"发展，运输规模不断增长</li>
-                                <li class="mb-2">向"新"而行，改革创新红利有效释放</li>
-                                <li class="mb-2">向"精"求效，经营质量稳步提升</li>
-                                <li class="mb-2">向"难"攻坚，铁路建设取得突破</li>
-                                <li>向"融"深化，党建实效持续增强</li>
-                            </ul>
-                        </div>
-                    </div>
+      <h3>二、以全局视野和战略眼光，系统谋划争当先行示范</h3>
+      <p>明确目标定位：力争“4个率先”，即率先实现产品卓越、品牌卓著、创新领先、治理现代。</p>
+      <p>把握主要标志：创建“9个一流”，包括一流的安全管理、运输产品、品牌体系、经营效益、区域路网、改革能力、科技创新、治理水平、党建水平。</p>
+      <p>认清机遇挑战：既有区位、基础、基因等现实优势，也面临“大而不强、大而不优”等问题与竞争压力。</p>
+      <p>实践路径：高质量编制并落实“十五五”规划，按照4个阶段制定实施“1+9”行动方案。</p>
 
-                    <!-- 第二点 -->
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 blue-accent">二、以全局视野和战略眼光，系统谋划争当先行示范</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-                            <div class="blue-light-bg p-4 rounded-lg">
-                                <h4 class="font-semibold text-gray-700 mb-2">先行示范的目标定位：</h4>
-                                <p class="text-gray-600">要走在前列、引领全路，主要目标是"4个率先"：</p>
-                                <ul class="list-disc pl-5 text-gray-600 mt-2">
-                                    <li>在全路率先实现产品卓越</li>
-                                    <li>品牌卓著</li>
-                                    <li>创新领先</li>
-                                    <li>治理现代的目标</li>
-                                </ul>
-                            </div>
-                            <div class="blue-light-bg p-4 rounded-lg">
-                                <h4 class="font-semibold text-gray-700 mb-2">先行示范的主要标志：</h4>
-                                <p class="text-gray-600">创建"9个一流"：</p>
-                                <ul class="list-disc pl-5 text-gray-600 mt-2">
-                                    <li>一流的安全管理</li>
-                                    <li>一流的运输产品</li>
-                                    <li>一流的品牌体系</li>
-                                    <li>一流的经营效益</li>
-                                    <li>一流的区域路网</li>
-                                    <li>一流的改革能力</li>
-                                    <li>一流的科技创新</li>
-                                    <li>一流的治理水平</li>
-                                    <li>一流的党建水平</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      <h3>三、干在当下步步向前，推动愿景变为实景</h3>
+      <p>立足“半年红”、冲刺“全年胜”。在安全、运输、经营、改革、建设、民生六个方面持续用力：</p>
+      <ul>
+        <li>筑牢“进”的根基：推进安全强基行动，守牢安全底线，提升本质安全水平。</li>
+        <li>保持“进”的态势：实施产品提升与品牌塑造行动，客货并举、组织优化、挖潜提效。</li>
+        <li>巩固“进”的质量：围绕经营增效行动，处理好四对关键关系，提升经营质效。</li>
+        <li>强化“进”的活力：改革赋能、科技创新、治理提质，激活全要素生产率。</li>
+        <li>建强“进”的支撑：强网强链，统筹工程进度与质量安全、建设与运营、建设与规划。</li>
+        <li>共享“进”的成果：切实增进职工福祉，提高健康水平。</li>
+      </ul>
 
-                    <!-- 第三点 -->
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 blue-accent">三、干在当下步步向前，推动争当先行示范的愿景变为实景</h3>
-                        <p class="text-gray-600 mb-4">立足"半年红"，冲刺"全年胜"，坚决确保安全，力争多完成任务，深抓管理提质、创新提效，不断改善职工福祉，推动"十四五"规划目标全面完成、整体工作稳中有进。</p>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 card-hover">
-                                <h4 class="font-semibold text-gray-700 mb-2">筑牢"进"的根基</h4>
-                                <p class="text-gray-600">在维护安全稳定上扎实干。围绕开展安全强基行动，全面提升安全保障水平。</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 card-hover">
-                                <h4 class="font-semibold text-gray-700 mb-2">保持"进"的态势</h4>
-                                <p class="text-gray-600">在做大运输体量上扎实干。围绕实施产品提升、品牌塑造行动。</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 card-hover">
-                                <h4 class="font-semibold text-gray-700 mb-2">巩固"进"的质量</h4>
-                                <p class="text-gray-600">在提升经营质效上扎实干。围绕开展经营增效行动，坚持开源节流。</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 card-hover">
-                                <h4 class="font-semibold text-gray-700 mb-2">强化"进"的活力</h4>
-                                <p class="text-gray-600">在推进改革创新上扎实干。围绕推进改革赋能、科技创新、治理提质行动。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 第四点 -->
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 blue-accent">四、注重双向融合赋能，以一流党建引领争当先行示范</h3>
-                        <p class="text-gray-600 mb-4">按照奋进提升、优化成果、拓展深化3个阶段，实施党建强局行动，构建"3+1"党建体系，做到政治引领一流、党建基础一流、融合赋能一流。</p>
-                        
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-semibold text-gray-700 mb-2">重点做到"8个强"：</h4>
-                            <ol class="list-decimal pl-5 text-gray-600">
-                                <li class="mb-2">坚持以政治强明方向，为争当先行示范指引正确航向</li>
-                                <li class="mb-2">坚持以思想强铸魂脉，为争当先行示范激发精神力量</li>
-                                <li class="mb-2">坚持以组织强固根本，为争当先行示范筑牢坚强堡垒</li>
-                                <li class="mb-2">坚持以作风强保落实，为争当先行示范营造良好风气</li>
-                                <li class="mb-2">坚持以纪律强促廉洁，为争当先行示范提供坚强保障</li>
-                                <li class="mb-2">坚持以文化强育新人，为争当先行示范凝聚广泛共识</li>
-                                <li class="mb-2">坚持以制度强建体系，为争当先行示范夯实保障基础</li>
-                                <li>坚持以合力强助发展，为争当先行示范汇聚奋进力量</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl font-bold text-gray-800 my-12 blue-accent">鲍立群总经理工作报告要点</h2>
-                
-                <div class="bg-gray-50 p-6 rounded-lg mb-8">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">接续奋斗 聚力攻坚 坚决完成全年目标任务</h3>
-                    
-                    <h4 class="font-semibold text-gray-700 mb-2">上半年工作成绩：</h4>
-                    <ul class="list-disc pl-5 text-gray-600 mb-6">
-                        <li class="mb-2">安全保持总体稳定</li>
-                        <li class="mb-2">客货运输再创新高</li>
-                        <li class="mb-2">经营质效稳步提升</li>
-                        <li>全面从严治党纵深推进等8个方面</li>
-                    </ul>
-                    
-                    <h4 class="font-semibold text-gray-700 mb-2">下半年工作部署：</h4>
-                    <ol class="list-decimal pl-5 text-gray-600">
-                        <li class="mb-2">坚持人民至上、生命至上，全力确保安全持续稳定</li>
-                        <li class="mb-2">全面提升运输服务保障水平，坚决完成年度经营任务</li>
-                        <li class="mb-2">坚持市场化法治化经营，全面提升经营质量和效益</li>
-                        <li class="mb-2">深化体制机制改革，不断激发高质量发展动力活力</li>
-                        <li class="mb-2">加快培育新质生产力，厚植企业发展竞争优势</li>
-                        <li class="mb-2">优质高效推进铁路建设，持续提升路网整体功能</li>
-                        <li>深入落实"党建强路"工程，以一流党建引领保障企业高质量发展</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
+      <h3>四、以一流党建引领争当先行示范</h3>
+      <p>实施党建强局行动，构建“3+1”党建体系，做到政治引领一流、党建基础一流、融合赋能一流，突出“8个强”：</p>
+      <ol>
+        <li>以政治强明方向；</li>
+        <li>以思想强铸魂脉；</li>
+        <li>以组织强固根本；</li>
+        <li>以作风强保落实；</li>
+        <li>以纪律强促廉洁；</li>
+        <li>以文化强育新人；</li>
+        <li>以制度强建体系；</li>
+        <li>以合力强助发展。</li>
+      </ol>
+      <p>并对8月份重点工作作出部署：紧盯汛期暑期安全、确保暑运目标、统筹推进各项任务。</p>
     </section>
 
-    <!-- 页脚 -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">集团公司</h3>
-                    <p class="text-gray-400">致力于建设世界一流铁路企业，争当先行示范。</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">相关链接</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">新闻中心</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">会议专题</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">政策文件</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">联系我们</h4>
-                    <p class="text-gray-400">地址：北京市朝阳区创意园区A座</p>
-                    <p class="text-gray-400">电话：+86 123 4567 8910</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
-                <p class="text-gray-400 text-sm">© 2025 集团公司. 保留所有权利.</p>
-            </div>
-        </div>
-    </footer>
+    <section id="bao" class="card">
+      <h2>鲍立群总经理工作报告：接续奋斗 聚力攻坚 坚决完成全年目标任务</h2>
+      <p>报告总结了上半年安全、运输、经营、从严治党等方面工作，分析问题，提出下半年七个方面的重点部署：</p>
+      <ol>
+        <li><strong>安全稳定：</strong>坚持人民至上、生命至上，强化防洪、施工、设备、消防、劳动作业等关键管控，推进专业管理和安全基础建设，压实责任。</li>
+        <li><strong>经营任务：</strong>围绕市场需求优化客货组织，抓好客运增量提质、货运增运上量，深化运输挖潜提效，确保年度目标完成。</li>
+        <li><strong>质量效益：</strong>坚持市场化法治化经营，统筹资源、推进一体化经营，规范非运输业与物资管理，改善合资公司经营，提高依法治企水平。</li>
+        <li><strong>改革赋能：</strong>深化体制机制改革，优化资本布局，推进生产劳动组织、三项制度、修程修制改革，提升治理效能。</li>
+        <li><strong>新质生产力：</strong>推进数智赋能，围绕安全、经营、建设等领域深化应用创新，完善科技创新机制，激发创新活力。</li>
+        <li><strong>铁路建设：</strong>优质高效推进项目，确保拟开通项目按期开通、在建项目有序推进、拟开工项目尽早开工，守住质量安全底线。</li>
+        <li><strong>党建引领：</strong>深入落实“党建强路”，推进基层组织“强基提质”，加强企业文化引领，推进党建与业务深度融合，推进党风廉政建设与反腐败，建设企业与职工命运共同体。</li>
+      </ol>
+      <p class="small">集团领导班子成员及有关领导出席会议，机关各部门负责人、各基层单位主要负责人等参加会议。</p>
+    </section>
+
+    <section class="card">
+      <h2>版权与联系</h2>
+      <p>版权所有：集团公司 · 办公室</p>
+    </section>
+
+    <footer>© 2025 集团公司</footer>
+  </div>
+
+  <button class="top" aria-label="回到顶部" title="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 </body>
 </html>
