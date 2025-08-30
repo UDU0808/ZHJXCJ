@@ -6,61 +6,202 @@
   <title>集团公司召开2025年年中领导干部会议</title>
   <meta name="description" content="集团公司2025年年中领导干部会议——讲话与工作报告全文，手机/电脑端自适应，排版清晰优雅。" />
   <style>
-    :root{
-      --bg:#f4f8fd;              /* 浅蓝白背景 */
-      --card:#ffffff;            /* 白色卡片 */
-      --text:#1a237e;            /* 深蓝文本 */
-      --muted:#5c6bc0;           /* 浅蓝灰副文本 */
-      --brand:#1976d2;           /* 主蓝色 */
-      --brand-weak:#e3f0ff;      /* 浅蓝色点缀 */
-      --shadow:0 10px 30px rgba(25, 118, 210, .08);
-      --radius:16px;
-      --max: 980px;
+    :root {
+      --bg: #f6faff;
+      --card: #fff;
+      --text: #1a237e;
+      --muted: #6b7bb8;
+      --brand: #2563eb;
+      --brand-light: #e0eaff;
+      --brand-dark: #1742a0;
+      --accent: #00c6fb;
+      --shadow: 0 8px 32px rgba(37,99,235,0.10);
+      --radius: 20px;
+      --max: 900px;
+      --transition: .25s cubic-bezier(.4,0,.2,1);
     }
-    @media (prefers-color-scheme: dark){
-      :root{
-        --bg:#101c2c;
-        --card:#172a45;
-        --text:#e3eafc;
-        --muted:#90a4d4;
-        --brand:#64b5f6;
-        --brand-weak:#183a5a;
-        --shadow:0 10px 30px rgba(25, 118, 210, .25);
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101c2c;
+        --card: #172a45;
+        --text: #e3eafc;
+        --muted: #90a4d4;
+        --brand: #64b5f6;
+        --brand-light: #183a5a;
+        --brand-dark: #1976d2;
+        --accent: #00eaff;
+        --shadow: 0 8px 32px rgba(37,99,235,0.25);
       }
-      img{opacity:.96}
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; line-height:1.8}
-    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
-    header.hero{
-      position:relative;overflow:hidden;border-radius:calc(var(--radius) + 6px);
-      padding:40px 24px;background:linear-gradient(135deg,var(--brand) 0%, #64b5f6 100%);
-      color:#fff;box-shadow:var(--shadow);margin:24px auto;
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+      line-height: 1.8;
+      font-size: 17px;
+      letter-spacing: 0.01em;
+      transition: background var(--transition), color var(--transition);
     }
-    .hero h1{margin:0 0 6px;font-weight:800;letter-spacing:.4px;font-size:clamp(22px,4vw,36px)}
-    .hero p{margin:0;opacity:.95;font-size:clamp(14px,2.6vw,16px)}
-    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:13px;opacity:.95}
-    .card{
-      background:var(--card);box-shadow:var(--shadow);border-radius:var(--radius);
-      padding:22px 20px;margin:18px 0;
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 16px 0 16px;
     }
-    h2{font-size:clamp(18px,3vw,22px);margin:0 0 8px;color:var(--brand);}
-    h3{font-size:clamp(16px,2.5vw,19px);margin:18px 0 6px;color:var(--text);}
-    p{margin:10px 0}
-    .lead{font-size:clamp(15px,2.6vw,17px);color:var(--muted)}
-    .toc{display:flex;gap:10px;flex-wrap:wrap}
-    .chip{background:var(--brand-weak);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;text-decoration:none}
-    .highlight{border-left:4px solid var(--brand);padding:10px 14px;background:rgba(25,118,210,.06);border-radius:10px}
-    footer{color:var(--muted);font-size:13px;text-align:center;margin:28px 0 16px}
-    .top{
-      position:fixed;right:18px;bottom:18px;border:none;background:var(--brand);
-      color:#fff;border-radius:999px;width:44px;height:44px;cursor:pointer;
-      box-shadow:var(--shadow);font-size:18px
+    header.hero {
+      background: linear-gradient(120deg, var(--brand) 0%, var(--accent) 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 48px 28px 36px 28px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
     }
-    .top:active{transform:translateY(1px)}
-    .small{font-size:13px;color:var(--muted)}
-    /* 蓝色链接 */
-    a { color: var(--brand); }
-    a:hover { text-decoration: underline; }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, var(--brand-light) 0%, transparent 70%);
+      opacity: 0.5;
+      z-index: 0;
+    }
+    .hero h1 {
+      margin: 0 0 12px 0;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 900;
+      letter-spacing: .5px;
+      z-index: 1;
+      position: relative;
+    }
+    .hero .lead {
+      font-size: 1.15rem;
+      color: #fff;
+      opacity: .92;
+      margin-bottom: 18px;
+      z-index: 1;
+      position: relative;
+    }
+    .meta {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      opacity: .93;
+      z-index: 1;
+      position: relative;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 24px;
+      margin: 0 0 28px 0;
+      transition: box-shadow var(--transition);
+    }
+    .card:hover {
+      box-shadow: 0 12px 36px rgba(37,99,235,0.13);
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin: 0 0 12px 0;
+      color: var(--brand);
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    h3 {
+      font-size: 1.08rem;
+      margin: 22px 0 8px 0;
+      color: var(--brand-dark);
+      font-weight: 600;
+    }
+    p, ul, ol {
+      margin: 12px 0;
+    }
+    .lead {
+      font-size: 1.1rem;
+      color: #fff;
+      opacity: .92;
+    }
+    .toc {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .chip {
+      background: var(--brand-light);
+      color: var(--brand);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background var(--transition), color var(--transition);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(37,99,235,0.05);
+    }
+    .chip:hover {
+      background: var(--brand);
+      color: #fff;
+    }
+    .highlight {
+      border-left: 4px solid var(--accent);
+      padding: 12px 18px;
+      background: rgba(37,99,235,0.07);
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+      margin: 40px 0 20px 0;
+      letter-spacing: .1em;
+    }
+    .top {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      border: none;
+      background: var(--brand);
+      color: #fff;
+      border-radius: 50%;
+      width: 52px;
+      height: 52px;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      font-size: 22px;
+      z-index: 10;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .top:hover {
+      background: var(--accent);
+      transform: translateY(-2px) scale(1.07);
+    }
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    /* 响应式 */
+    @media (max-width: 600px) {
+      .wrap { padding: 12px 2vw 0 2vw; }
+      .card { padding: 18px 8px; }
+      header.hero { padding: 32px 10px 24px 10px; }
+    }
   </style>
 </head>
 <body>
@@ -143,6 +284,7 @@
     <section class="card">
       <h2>版权与联系</h2>
       <p>版权所有：集团公司 · 办公室</p>
+      <p class="small">如需转载或引用，请注明来源。</p>
     </section>
 
     <footer>© 2025 集团公司</footer>
